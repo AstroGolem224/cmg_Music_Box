@@ -1,8 +1,18 @@
-﻿@import "tailwindcss";
+@import "tailwindcss";
 
 :root {
-  --background: #0b1220;
-  --foreground: #f5ead7;
+  --background: #0c1214;
+  --foreground: #e8edf0;
+  --bg-card: #111a1e;
+  --bg-input: #0e1619;
+  --border: #1e2d33;
+  --border-glow: #2a4048;
+  --ember: #d4520a;
+  --ember-dark: #a83e08;
+  --cyan: #0de8f5;
+  --gold: #c9972a;
+  --text-muted: #6b8490;
+  --text-dim: #3d5560;
 }
 
 * {
@@ -12,16 +22,15 @@
 html {
   min-height: 100%;
   background:
-    radial-gradient(circle at top left, rgba(240, 127, 74, 0.2), transparent 35%),
-    radial-gradient(circle at top right, rgba(93, 232, 192, 0.12), transparent 30%),
-    linear-gradient(145deg, #0b1220 0%, #11192a 46%, #1b2334 100%);
+    radial-gradient(circle at top left, rgba(212, 82, 10, 0.12), transparent 30%),
+    linear-gradient(180deg, #0c1214 0%, #0d1417 100%);
 }
 
 body {
   min-height: 100vh;
   margin: 0;
   color: var(--foreground);
-  font-family: "Segoe UI Variable Display", "Aptos", "Trebuchet MS", sans-serif;
+  font-family: var(--font-ui), system-ui, sans-serif;
   background: transparent;
 }
 
@@ -30,12 +39,29 @@ a {
   text-decoration: none;
 }
 
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  color: var(--foreground);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-dim);
+}
+
 ::selection {
-  background: rgba(237, 136, 84, 0.85);
-  color: #111827;
+  background: rgba(212, 82, 10, 0.85);
+  color: #fff;
 }
 
 textarea {
   resize: vertical;
 }
-

@@ -42,6 +42,7 @@ npm run build
 
 - [Architecture Reference](./docs/architecture-reference.md)
 - [GitHub Pages Deploy](./docs/github-pages-deploy.md)
+- [Soundforge Visual Alignment](./docs/soundforge-visual-alignment.md)
 - [Prompting Guide](./docs/PROMPTING.md)
 - [Architecture](./docs/architecture.md)
 - [Implementation Plan](./docs/implementation-plan.md)
